@@ -1,0 +1,104 @@
+.work-experience {
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  padding: 2.7rem 2vw;
+}
+
+.work-experience h2 {
+  color: #efb75e;
+  font-size: 1.85rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.experience__timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #7f5af0, #efb75e);
+}
+
+.experience__item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.experience__marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7f5af0;
+  border: 3px solid #16181d;
+  box-shadow: 0 0 0 3px #7f5af0;
+}
+
+.experience__content {
+  background: rgba(34, 35, 42, 0.98);
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 2rem;
+  border: 1px solid #21222d22;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border-left: 4px solid #7f5af0;
+}
+
+.experience__content:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 32px #7f5af044;
+}
+
+.experience__title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.experience__organization {
+  color: #7f5af0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.experience__duration {
+  color: #efb75e;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.experience__responsibilities {
+  color: #e3e3e3;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+}
+
+.experience__responsibilities li {
+  margin-bottom: 0.5rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.3s 0.14s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

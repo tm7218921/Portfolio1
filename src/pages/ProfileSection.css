@@ -1,0 +1,35 @@
+.profile {
+  display: flex; align-items: center; gap: 2.5rem;
+  padding: 4rem 6vw;
+  background: linear-gradient(135deg, #21222d 60%, #181a23 100%);
+  border-radius: 1.5rem;
+  max-width: 900px; margin: 2rem auto 0;
+  box-shadow: 0 4px 32px #22222a50;
+}
+.profile__avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #232530;
+  box-shadow: 0 2px 16px #0c0c10cc;
+  background: linear-gradient(120deg,#2d2f39,#5b5b6a); /* fallback if no photo */
+}
+
+.profile__name {
+  font-size: 2.7rem; color: #fff; font-weight: 800; margin-bottom: 0.5rem;
+}
+.profile__role {
+  color: #b0b0b0; font-size: 1.3rem; margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.profile__contact, .profile__links {
+  color: #7f5af0; margin-bottom: 0.7rem; font-size: 1.05rem;
+  display: flex; flex-wrap: wrap; gap: 1.1rem;
+}
+.profile__links a { text-decoration: underline; color: #7f5af0; transition: color 0.2s; }
+.profile__links a:hover { color: #efb75e; }
+.fade-in {
+  opacity: 0; animation: fadeIn 1.1s 0.2s forwards;
+}
+@keyframes fadeIn { to { opacity: 1; } }

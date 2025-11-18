@@ -1,0 +1,132 @@
+.workshops__section {
+  max-width: 1150px;
+  margin: 3rem auto 0;
+  padding: 2.7rem 2vw;
+}
+.workshops__section h2 {
+  color: #efb75e;
+  font-size: 1.85rem;
+  margin-bottom: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.ws__subtitle {
+  color: #7f5af0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #7f5af0;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+.workshops__list {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;               /* Allows multiple rows if needed */
+  gap: 1.3rem;                   /* Space between cards */
+  margin-bottom: 2.5rem;
+  justify-content: center;       /* Centers the row */
+}
+.hackathons__section{
+margin-bottom: 2.5rem;
+}
+
+.workshop__card {
+  width: 150px;
+  height: 150px;
+  min-width: 120px;
+  min-height: 120px;
+  background: rgba(34,35,42,0.98);
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 1.1rem 1.1rem;
+  border: 1px solid #21222d22;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.3rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hackathon__card{
+   height: 100px;
+   width: 800px;
+   background: rgba(34,35,42,0.98);
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 1.1rem 1.1rem;
+  border: 1px solid #21222d22;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.3rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.workshop__card:hover,
+.hackathon__card:hover {
+  transform: translateY(-4px) scale(1.018);
+  box-shadow: 0 8px 24px #7f5af044;
+}
+.workshop__title,
+.hackathon__name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.07rem;
+}
+.workshop__org,
+.hackathon__org {
+  color: #b0b0b0;
+  font-size: 0.97rem;
+  margin-left: 0.7rem;
+}
+.workshop__details,
+.hackathon__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  align-items: center;
+  font-size: 0.96rem;
+  margin-top: 0.2rem;
+}
+
+.hackathon__collaborators {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  display: block;
+  margin-top: 0.25rem;
+  color: #7f5af0;
+}
+
+.workshop__date,
+.hackathon__role, .hackathon__topic, .hackathon__year {
+  color: #7f5af0;
+}
+.workshop__cred {
+  color: #efb75e;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.workshop__cred:hover {
+  color: #fff;
+}
+.hackathon__topic strong {
+  color: #efb75e;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.3s 0.14s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
