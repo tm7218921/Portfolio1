@@ -20,14 +20,29 @@ const skillCategories = [
   },
   {
     category: "Domains",
-    skills: ["Machine Learning", "Web Development", "Deep Learning", "Computer Vision"]
+    skills: [
+      "Machine Learning",
+      "Web Development",
+      "Deep Learning",
+      "Computer Vision"
+    ]
+  },
+  {
+    category: "Creative & Communication Skills",
+    skills: [
+      "Video Editing",
+      "Blog Writing",
+      "Poetry Writing",
+      "Content Creation",
+      "Visual Storytelling"
+    ]
   }
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className="skills fade-in">
-      <h2>Tech Stack I Have Worked On</h2>
+      <h2>Skills</h2>
       <div className="skills__container">
         {skillCategories.map((category, index) => (
           <div key={index} className="skills__category">
