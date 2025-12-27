@@ -1,0 +1,198 @@
+body {
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+  background: #16181d;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Global Responsive Media Queries */
+
+/* Base typography and spacing adjustments */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+}
+
+/* For screens 900px and smaller – tablets and small laptops */
+@media (max-width: 900px) {
+  
+  /* Container wrappers (use your main container class names) */
+  .container,
+  .workshops__section,
+  .projects__list,
+  .skills__container,
+  .blog__grid,
+  .profile,
+  .about,
+  .contact,
+  .academic-activities,
+  .work-experience,
+  .hackathons__section {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+  /* Flex containers stack vertically on smaller screens */
+  .profile,
+  .workshops__list,
+  .skills__container,
+  .projects__list,
+  .blog__grid,
+  .work-experience .experience__timeline,
+  .hackathons__section {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem !important;
+  }
+
+  /* Resize images and avatars */
+  .profile__avatar,
+  .project__image,
+  .blog__card img,
+  .contact__form input,
+  .contact__form textarea {
+    width: 95%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Font sizes for headings and subheadings */
+  h1, h2, h3, h4 {
+    font-size: 80% !important;
+  }
+
+  /* Buttons and inputs stretch & resize */
+  .contact__form input,
+  .contact__form textarea,
+  button {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+  
+  /* Navigation links stack */
+  .header__nav {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  /* Reduce margins across cards */
+  .workshop__card,
+  .hackathon__card,
+  .project__card,
+  .skill__tag,
+  .blog__card,
+  .experience__item,
+  .achievement__card {
+    margin: 0.5rem 0 !important;
+    width: 100% !important;
+    max-width: 480px !important;
+  }
+}
+
+/* For small devices such as phones, under 600px */
+@media (max-width: 600px) {
+  
+  /* Further reduce container padding and width */
+  .container,
+  .workshops__section,
+  .projects__list,
+  .skills__container,
+  .blog__grid,
+  .profile,
+  .about,
+  .contact,
+  .academic-activities,
+  .work-experience,
+  .hackathons__section {
+    width: 95vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Reduce font sizes */
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  h3, h4 {
+    font-size: 1.1rem !important;
+  }
+  p, li, span {
+    font-size: 0.95rem !important;
+  }
+
+  /* Stack nav items & shrink icons */
+  .header__nav {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .header__nav .nav__link {
+    padding: 0.5rem 0;
+    font-size: 1rem !important;
+  }
+
+  /* Profile avatar smaller */
+  .profile__avatar {
+    width: 75px !important;
+    height: 75px !important;
+  }
+
+  /* Reduce card sizes */
+  .workshop__card,
+  .hackathon__card,
+  .project__card,
+  .blog__card,
+  .skill__tag {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Contact form inputs larger padding for touch */
+  .contact__form input,
+  .contact__form textarea {
+    padding: 1rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* Footer text smaller */
+  .footer {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Utility: prevent horizontal scroll */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Images and SVGs scale properly */
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make links respond to hover/focus for UX */
+a:hover, a:focus, .nav__link:hover, .nav__link:focus {
+  color: #efb75e !important;
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

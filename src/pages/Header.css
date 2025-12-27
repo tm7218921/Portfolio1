@@ -1,0 +1,101 @@
+/* Your existing styles, e.g.: */
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1.5rem 4vw;
+  background: rgba(18,20,26, 0.91);
+  box-shadow: 0 2px 8px #22222a33;
+  position: sticky; top: 0; z-index: 99;
+  backdrop-filter: blur(10px);
+}
+
+.header__branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.header__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.6rem;
+  display: inline-block;
+}
+
+.header__logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__link {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.18s;
+  position: relative;
+}
+
+.header__nav .nav__link::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background: #7f5af0;
+  transition: width 0.2s;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #fff;
+}
+
+.header__nav .nav__link:hover::after,
+.header__nav .nav__link:focus::after {
+  width: 100%;
+}
+
+/* Hamburger button - hidden on desktop */
+.header__menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive: under 700px */
+@media (max-width: 700px) {
+  /* Hide nav links */
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    background: rgba(18,20,26, 0.95);
+    position: absolute;
+    top: 60px; /* Below header */
+    right: 0;
+    width: 100vw;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 16px #22222aaa;
+    z-index: 100;
+  }
+  /* When menu toggled */
+  .header__nav.open {
+    display: flex;
+  }
+  /* Show hamburger button */
+  .header__menu-btn {
+    display: block;
+  }
+}

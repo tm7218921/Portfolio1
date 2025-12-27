@@ -1,0 +1,26 @@
+.projects { max-width: 1150px; margin: 3rem auto 0; padding: 2.7rem 2vw; }
+.projects h2 { color:#efb75e; font-size:1.85rem; margin-bottom:2.2rem; font-weight:700;}
+.projects__list {
+  display: flex; flex-wrap: wrap; gap: 2.2rem;
+  justify-content: center;
+}
+.project__card {
+  background: rgba(34,35,42,0.98); border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 1.7rem 1.6rem; width: 320px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1px solid #21222d22;
+  display: flex; flex-direction: column; gap: 0.6rem;
+  opacity: 0.94;
+  cursor: pointer;
+}
+.project__card:hover {
+  transform: translateY(-8px) scale(1.028);
+  box-shadow: 0 6px 32px #7f5af044;
+}
+.project__title { color:#fff; font-weight:700; font-size:1.23rem;}
+.project__date { color:#7f5af0; font-weight:500; font-size:0.98rem;}
+.project__desc { color:#b0b0b0; font-size:1.04rem;}
+.project__stack { color:#efb75e; font-size:0.95rem;}
+.fade-in { opacity: 0; animation: fadeIn 1.3s 0.14s forwards; }
+@keyframes fadeIn { to { opacity: 1; } }

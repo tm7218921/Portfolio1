@@ -1,0 +1,14 @@
+.footer {
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  background: #1a1b23; color: #8a8da8;
+  font-size: 1.05rem; font-weight: 500;
+  padding: 2rem 0 1.2rem 0; margin-top: 2.7rem;
+  border-top: 1.5px solid #232530;
+  box-shadow: 0 -2px 16px #12121722;
+}
+.footer__links {
+  display: flex; gap: 1.2rem; margin-top: 0.3rem;
+}
+.footer__links a { color: #7f5af0; text-decoration: none; }
+.footer__links a:hover { color: #efb75e; text-decoration: underline; }
+.footer__mail { color: #efb75e; font-weight: 700; }

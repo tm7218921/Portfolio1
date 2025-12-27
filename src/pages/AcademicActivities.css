@@ -1,0 +1,160 @@
+.academic-activities {
+  max-width: 1150px;
+  margin: 3rem auto 0;
+  padding: 2.7rem 2vw;
+}
+
+.academic-activities h2 {
+  color: #efb75e;
+  font-size: 1.85rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.education__section,
+.achievements__section {
+  margin-bottom: 3rem;
+}
+
+.section__title {
+  color: #7f5af0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #7f5af0;
+  padding-bottom: 0.5rem;
+}
+
+.education__card {
+  background: rgba(34, 35, 42, 0.98);
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 2rem;
+  border: 1px solid #21222d22;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border-left: 4px solid #efb75e;
+}
+
+.education__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 32px #efb75e44;
+}
+
+.education__institution {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.education__degree {
+  color: #e3e3e3;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.education__details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education__cgpa {
+  color: #7f5af0;
+  font-weight: 600;
+  background: rgba(127, 90, 240, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.education__duration {
+  color: #efb75e;
+  font-weight: 600;
+  background: rgba(239, 183, 94, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.achievements__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement__card {
+  background: rgba(34, 35, 42, 0.98);
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #12121733;
+  padding: 1.8rem;
+  border: 1px solid #21222d22;
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #7f5af0, #efb75e);
+}
+
+.achievement__card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px #7f5af055;
+}
+
+.achievement__type {
+  color: #7f5af0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  background: rgba(127, 90, 240, 0.1);
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+}
+
+.achievement__title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.achievement__year {
+  color: #efb75e;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.3s 0.14s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education__details {
+    flex-direction: column;
+  }
+  
+  .achievements__grid {
+    grid-template-columns: 1fr;
+  }
+}
