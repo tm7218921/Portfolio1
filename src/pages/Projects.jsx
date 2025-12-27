@@ -40,6 +40,14 @@ const projects = [
     stack: "HTML, CSS, JavaScript",
     repo: "https://github.com/tm7218921/Spotify-Clone"
   }
+  {
+  title: "Voice Pizza Order Status Agent",
+  date: "Dec 2025",
+  description:
+    "Built a Python-based voice assistant that lets users check pizza order status by speaking an order ID. The system uses speech recognition to capture input, fetches order details from JSON, and responds with AI-generated voice output.",
+  stack: "Python, SpeechRecognition, ElevenLabs API, JSON",
+  repo: "https://github.com/tm7218921/voice-pizza-order-status-Agent"
+},  
 ];
 
 export default function Projects() {
