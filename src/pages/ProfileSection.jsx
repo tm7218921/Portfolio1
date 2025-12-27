@@ -27,8 +27,6 @@ export default function ProfileSection() {
          📄 Download Resume
           </a>
         </div>
-
-
       </div>
     </section>
   );
