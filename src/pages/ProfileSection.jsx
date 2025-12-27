@@ -19,8 +19,16 @@ export default function ProfileSection() {
           <a href="https://linkedin.com/in/tanmay-mandal-a56a42313" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
          <div className="profile__resume">
-          <a href="/assets/Tanmay_Mandal.pdf" download className="resume-btn"> Download Resume </a>
+         <a
+          href="/Tanmay_Mandal_Resume.pdf"
+          download
+          className="resume-btn fade-in"
+         >
+         📄 Download Resume
+          </a>
         </div>
+
+
       </div>
     </section>
   );
