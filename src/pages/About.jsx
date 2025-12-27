@@ -7,9 +7,9 @@ export default function About() {
     <section id="about" className="about fade-in">
       <h2>About Me</h2>
       <p>
-        I'm Tanmay, passionate about the sweet spot between strategy, design, and innovative tech.
-        Currently pursuing engineering in AI & Data Science at Datta Meghe College (7.32 CGPA, 2022–2026),
-        I’ve delivered robust projects—from real-time AI systems to scalable web solutions—and thrive solving complex problems with smart code and impact-driven teamwork.
+      I’m Tanmay, someone who enjoys working at the intersection of strategy, design, and new technology.
+      I’m currently pursuing engineering in AI & Data Science at Datta Meghe College (CGPA: 7.32, 2022–2026).
+      I’ve worked on projects ranging from real-time AI systems to scalable web applications, and I love solving challenging problems through clean code and collaborative, impact-driven work.
       </p>
     </section>
   );
