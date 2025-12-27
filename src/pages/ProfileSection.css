@@ -52,7 +52,9 @@
 }
 
 .resume-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 18px #00000088;
   opacity: 0.95;
 }
+
+
