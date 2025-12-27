@@ -1,38 +1,65 @@
 import React, { useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle menu and optionally close menu when link clicked (good UX)
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="header">
-      <div className="header__branding">
-        <img src={require("../assets/logo.png")} alt="Site Icon" className="header__icon" />
+      {/* Logo + Name → Home */}
+      <Link to="/" className="header__branding" onClick={closeMenu}>
+        <img
+          src={require("../assets/logo.png")}
+          alt="Site Icon"
+          className="header__icon"
+        />
         <div className="header__logo">TANMAY</div>
-      </div>
+      </Link>
 
-      {/* Hamburger button for small screens */}
+      {/* Hamburger button */}
       <button
         aria-label="Toggle menu"
         className={`header__menu-btn${menuOpen ? " open" : ""}`}
         onClick={toggleMenu}
       >
-        &#9776; {/* hamburger unicode icon */}
+        &#9776;
       </button>
 
-      {/* Navigation menu */}
+      {/* Navigation */}
       <nav className={`header__nav${menuOpen ? " open" : ""}`}>
-        <a href="about" className="nav__link" onClick={closeMenu}>About</a>
-        <a href="skills" className="nav__link" onClick={closeMenu}>Skills</a>
-        <a href="work-experience" className="nav__link" onClick={closeMenu}>Experience</a>
-        <a href="academic-activities" className="nav__link" onClick={closeMenu}>Education</a>
-        <a href="projects" className="nav__link" onClick={closeMenu}>Projects</a>
-        <a href="contact" className="nav__link" onClick={closeMenu}>Contact</a>
-        <a href="blog" className="nav__link" onClick={closeMenu}>Blog</a>
+        <Link to="/about" className="nav__link" onClick={closeMenu}>
+          About
+        </Link>
+        <Link to="/skills" className="nav__link" onClick={closeMenu}>
+          Skills
+        </Link>
+        <Link
+          to="/work-experience"
+          className="nav__link"
+          onClick={closeMenu}
+        >
+          Experience
+        </Link>
+        <Link
+          to="/academic-activities"
+          className="nav__link"
+          onClick={closeMenu}
+        >
+          Education
+        </Link>
+        <Link to="/projects" className="nav__link" onClick={closeMenu}>
+          Projects
+        </Link>
+        <Link to="/contact" className="nav__link" onClick={closeMenu}>
+          Contact
+        </Link>
+        <Link to="/blog" className="nav__link" onClick={closeMenu}>
+          Blog
+        </Link>
       </nav>
     </header>
   );
