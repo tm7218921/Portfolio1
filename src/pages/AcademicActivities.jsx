@@ -5,7 +5,7 @@ const academicData = {
   education: {
     institution: "Datta Meghe College of Engineering, Airoli, Navi Mumbai",
     degree: "Bachelor of Engineering (B.E) – Artificial Intelligence and Data Science",
-    cgpa: "7.02",
+    cgpa: "7.54",
     duration: "2022 – 2026"
   },
   achievements: [
