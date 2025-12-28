@@ -26,6 +26,13 @@
   padding-bottom: 0.5rem;
 }
 
+/* Added timeline container styling */
+.education__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; /* Gap between education cards */
+}
+
 .education__card {
   background: rgba(34, 35, 42, 0.98);
   border-radius: 1.1rem;
@@ -60,9 +67,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 0.8rem; /* Added spacing before location */
 }
 
-.education__cgpa {
+.education__cgpa,
+.education__grade {
   color: #7f5af0;
   font-weight: 600;
   background: rgba(127, 90, 240, 0.1);
@@ -76,6 +85,14 @@
   background: rgba(239, 183, 94, 0.1);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
+}
+
+/* Added location styling */
+.education__location {
+  color: #b8b8b8;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 .achievements__grid {
@@ -156,5 +173,9 @@
   
   .achievements__grid {
     grid-template-columns: 1fr;
+  }
+  
+  .education__timeline {
+    gap: 1.5rem; /* Slightly reduced gap on mobile */
   }
 }
