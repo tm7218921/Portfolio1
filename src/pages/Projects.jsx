@@ -66,9 +66,7 @@ const projects = [
     "Designed automated workflows using n8n to integrate APIs, process data, and trigger actions across services, reducing manual effort and improving operational efficiency.",
   stack: "n8n, APIs, Webhooks, JSON, Automation",
   repo: "https://github.com/tm7218921/N8N-WORKFLOW"
-},
-
-];
+}];
 
 export default function Projects() {
   return (
