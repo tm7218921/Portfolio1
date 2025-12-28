@@ -9,6 +9,22 @@ const projects = [
     stack: "Python, OpenCV, Dlib, Pandas, Streamlit"
   },
   {
+    title: "QA Defect Analytics Dashboard",
+    date: "Oct 2025",
+    description:
+      "Built an interactive dashboard to analyze QA defect data, visualize trends, severity distribution, and module-wise bug density to support data-driven quality decisions.",
+    stack: "Python, Pandas, Streamlit, Data Visualization",
+    repo: "https://github.com/tm7218921/qa-defect-analytics-dashboard"
+  },
+  {
+    title: "n8n Workflow Automation",
+    date: "Nov 2025",
+    description:
+      "Designed automated workflows using n8n to integrate APIs, process data, and trigger actions across services, reducing manual effort and improving operational efficiency.",
+    stack: "n8n, APIs, Webhooks, JSON, Automation",
+    repo: "https://github.com/tm7218921/n8n-workflows"
+  },
+  {
     title: "Voice Pizza Order Status Agent",
     date: "Dec 2025",
     description:
@@ -51,22 +67,7 @@ const projects = [
     stack: "HTML, CSS, JavaScript",
     repo: "https://github.com/tm7218921/Spotify-Clone"
   }
-  {
-  title: "QA Defect Analytics Dashboard",
-  date: "Oct 2025",
-  description:
-    "Built an interactive dashboard to analyze QA defect data, visualize trends, severity distribution, and module-wise bug density to support data-driven quality decisions.",
-  stack: "Python, Pandas, Streamlit, Data Visualization",
-  repo: "https://github.com/tm7218921/QA-Issue-Analytics-Dashboard"
-},
-{
-  title: "n8n Workflow Automation",
-  date: "Nov 2025",
-  description:
-    "Designed automated workflows using n8n to integrate APIs, process data, and trigger actions across services, reducing manual effort and improving operational efficiency.",
-  stack: "n8n, APIs, Webhooks, JSON, Automation",
-  repo: "https://github.com/tm7218921/N8N-WORKFLOW"
-}];
+];
 
 export default function Projects() {
   return (
