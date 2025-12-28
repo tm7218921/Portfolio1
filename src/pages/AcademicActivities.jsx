@@ -2,12 +2,26 @@ import React from "react";
 import "./AcademicActivities.css";
 
 const academicData = {
-  education: {
-    institution: "Datta Meghe College of Engineering, Airoli, Navi Mumbai",
-    degree: "Bachelor of Engineering (B.E) – Artificial Intelligence and Data Science",
-    cgpa: "7.54",
-    duration: "2022 – 2026"
-  },
+  education: [
+    {
+      institution: "Datta Meghe College of Engineering, Airoli, Navi Mumbai",
+      degree: "Bachelor of Engineering (B.E) – Artificial Intelligence and Data Science",
+      score: "CGPA: 7.54",
+      duration: "2022 – 2026"
+    },
+    {
+      institution: "K. R. K. Kakani Kanishth Mahavidyalay, Malegaon",
+      degree: "Pre-University (HSC) – PCM + Biology",
+      score: "Percentage: 82.50%",
+      duration: "2020 – 2022"
+    },
+    {
+      institution: "Z. P. Kakani Vidyalaya School, Malegaon",
+      degree: "Secondary School (SSC)",
+      score: "Percentage: 91.80%",
+      duration: "2008 – 2020"
+    }
+  ],
   achievements: [
     {
       title: "Marathi Vangmay Mandal Fort Making",
@@ -29,20 +43,23 @@ const academicData = {
 
 export default function AcademicActivities() {
   return (
-              
     <section id="academic-activities" className="academic-activities fade-in">
       <h2>Education & Activities</h2>
-      
+
       {/* Education Section */}
       <div className="education__section">
         <h3 className="section__title">🎓 Education</h3>
-        <div className="education__card">
-          <h4 className="education__institution">{academicData.education.institution}</h4>
-          <p className="education__degree">{academicData.education.degree}</p>
-          <div className="education__details">
-            <span className="education__cgpa">CGPA: {academicData.education.cgpa}</span>
-            <span className="education__duration">{academicData.education.duration}</span>
-          </div>
+        <div className="education__grid">
+          {academicData.education.map((edu, index) => (
+            <div key={index} className="education__card">
+              <h4 className="education__institution">{edu.institution}</h4>
+              <p className="education__degree">{edu.degree}</p>
+              <div className="education__details">
+                <span className="education__score">{edu.score}</span>
+                <span className="education__duration">{edu.duration}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
