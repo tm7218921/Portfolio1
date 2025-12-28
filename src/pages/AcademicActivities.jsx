@@ -6,20 +6,23 @@ const academicData = {
     {
       institution: "Datta Meghe College of Engineering, Airoli, Navi Mumbai",
       degree: "Bachelor of Engineering (B.E) – Artificial Intelligence and Data Science",
-      score: "CGPA: 7.54",
-      duration: "2022 – 2026"
+      grade: "CGPA: 7.54",
+      duration: "2022 – 2026",
+      location: "Navi Mumbai"
     },
     {
-      institution: "K. R. K. Kakani Kanishth Mahavidyalay, Malegaon",
-      degree: "Pre-University (HSC) – PCM + Biology",
-      score: "Percentage: 82.50%",
-      duration: "2020 – 2022"
+      institution: "K. R. K. Kakani Kanishth Mahavidyalay",
+      degree: "Pre-University (HSC) – Physics, Chemistry, Maths and Biology",
+      grade: "Percentage: 82.50%",
+      duration: "2020 – 2022",
+      location: "Malegaon"
     },
     {
-      institution: "Z. P. Kakani Vidyalaya School, Malegaon",
-      degree: "Secondary School (SSC)",
-      score: "Percentage: 91.80%",
-      duration: "2008 – 2020"
+      institution: "Z. P. Kakani Vidyalaya School",
+      degree: "Secondary Schooling (SSC)",
+      grade: "Percentage: 91.80%",
+      duration: "2008 – 2020",
+      location: "Malegaon"
     }
   ],
   achievements: [
@@ -45,19 +48,20 @@ export default function AcademicActivities() {
   return (
     <section id="academic-activities" className="academic-activities fade-in">
       <h2>Education & Activities</h2>
-
+      
       {/* Education Section */}
       <div className="education__section">
         <h3 className="section__title">🎓 Education</h3>
-        <div className="education__grid">
+        <div className="education__timeline">
           {academicData.education.map((edu, index) => (
             <div key={index} className="education__card">
               <h4 className="education__institution">{edu.institution}</h4>
               <p className="education__degree">{edu.degree}</p>
               <div className="education__details">
-                <span className="education__score">{edu.score}</span>
+                <span className="education__grade">{edu.grade}</span>
                 <span className="education__duration">{edu.duration}</span>
               </div>
+              <p className="education__location">📍 {edu.location}</p>
             </div>
           ))}
         </div>
