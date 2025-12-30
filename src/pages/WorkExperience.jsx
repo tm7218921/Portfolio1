@@ -3,13 +3,15 @@ import "./WorkExperience.css";
 
 const workExperience = [
   {
-    title: "Google AI-ML Virtual Internship",
-    organization: "All India Council for Technical Education (AICTE)",
-    duration: "Oct 2024 – Dec 2024",
+    title: "Java Full Stack Developer Intern",
+    organization: "Amdox Technologies",
+    duration: "Nov 2025 – Feb 2026",
     responsibilities: [
-      "Completed a virtual internship focused on AI and machine learning projects under AICTE",
-      "Gained practical experience in ML algorithms, real-time data processing, and deep learning models",
-      "Worked on real-world projects involving object detection and data analysis"
+      "Developing robust full-stack applications using Java, Spring Boot, and React/Angular frameworks",
+      "Collaborating with UI/UX designers and backend developers to implement seamless, user-friendly features",
+      "Writing clean, modular code following industry best practices and integrating RESTful APIs and databases",
+      "Participating in code reviews, debugging, and performance optimization under mentorship of senior developers",
+      "Working on real-time client projects using agile methodologies including sprint planning and daily stand-ups"
     ]
   },
   {
@@ -21,6 +23,16 @@ const workExperience = [
       "Utilized HTML, CSS, Tailwind, and React.js to build user-friendly interfaces",
       "Collaborated with the backend team to integrate features and maintain functionality",
       "Debugged and optimized website performance to ensure smooth user experience"
+    ]
+  },
+  {
+    title: "Google AI-ML Virtual Internship",
+    organization: "All India Council for Technical Education (AICTE)",
+    duration: "Oct 2024 – Dec 2024",
+    responsibilities: [
+      "Completed a virtual internship focused on AI and machine learning projects under AICTE",
+      "Gained practical experience in ML algorithms, real-time data processing, and deep learning models",
+      "Worked on real-world projects involving object detection and data analysis"
     ]
   }
 ];
